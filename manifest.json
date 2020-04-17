@@ -1,0 +1,15 @@
+{
+	"name": "SaxoTraderGo Clock",
+	"version": "1.0",
+	"description": "Adds a digital clock to the SaxoTraderGo application. Useful when trading in full-screen mode.",
+	"manifest_version": 2,
+	"icons": { 
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"content_scripts": [{
+		"matches": ["https://www.saxotrader.com/*"],
+		"js": ["content.js"]
+	}]
+}
